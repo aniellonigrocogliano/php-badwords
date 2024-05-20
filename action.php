@@ -13,10 +13,10 @@ $word=$_GET["word"];
 </head>
 
 <body class="container">
-    <h2>Questo è il testo inserito <?php echo $text; ?> </h2>
-   <p>Il testo inserito è lungo: <?php echo strlen($text); ?> caratteri</p>
-   <h3>Questo è il testo censurato: <?php echo str_replace($word,"...",$text); ?> </h3>
-    <p>Il testo censurato è lungo: <?php echo strlen(str_replace($word,"...",$text)); ?> caratteri</p>
+    <h2> <span class="text-primary-emphasis"> Questo è il testo inserito: </span> <?php echo $text; ?> </h2>
+   <p> <span class="text-primary-emphasis"> Il testo inserito è lungo:</span> <?php echo strlen($text); ?> caratteri</p>
+   <h3><span class="text-danger">Questo è il testo censurato: </span><?php echo str_replace($word,"...",$text); ?> </h3>
+    <p><span class="text-primary-emphasis">Il testo censurato è lungo:</span> <?php echo strlen(str_replace($word,"...",$text)); ?> caratteri</p>
 </body>
 
 </html>
